@@ -14,7 +14,7 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 
 app.use(express.json({ limit: "50mb" }));
-app.use(cors());
+app.use(cors({ origin: "*", methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],}));
 const processToAvatar = async (text) => {
   const completion = await groq.chat.completions.create({
     messages: [
