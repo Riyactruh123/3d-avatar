@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "talking-avatar-with-ai",
+    "builds": [
+        {
+            "src": "./server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
