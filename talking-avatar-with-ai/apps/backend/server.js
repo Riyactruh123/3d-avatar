@@ -60,5 +60,7 @@ app.post("/tts", async (req, res) => {
   const messages = await processToAvatar(req.body.message);
   res.send({ messages });
 });
-
+app.get("/", (req, res) => {
+  res.send("Fast Avatar Server is running.");
+});
 app.listen(3001, () => console.log("🚀 Fast Avatar Server: http://localhost:3001"));
