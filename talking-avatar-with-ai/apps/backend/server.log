@@ -1,0 +1,38 @@
+
+> digital-human-backend@1.0.0 start
+> node server.js
+
+[OpenAI] Initializing ChatOpenAI model...
+[OpenAI] API Key present: true
+[OpenAI] Model: gpt-4-mini
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Function.listen (/Users/riyareddy/2d avatar interative/talking-avatar-with-ai/node_modules/express/lib/application.js:635:24)
+    at file:///Users/riyareddy/2d%20avatar%20interative/talking-avatar-with-ai/apps/backend/server.js:64:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1975:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.16.0
+npm error Lifecycle script `start` failed with error:
+npm error code 1
+npm error path /Users/riyareddy/2d avatar interative/talking-avatar-with-ai/apps/backend
+npm error workspace digital-human-backend@1.0.0
+npm error location /Users/riyareddy/2d avatar interative/talking-avatar-with-ai/apps/backend
+npm error command failed
+npm error command sh -c node server.js
