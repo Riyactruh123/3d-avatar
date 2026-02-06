@@ -1,4 +1,4 @@
-import { convertTextToSpeech } from "./elevenLabs.mjs";
+import { convertTextToSpeech } from "./amazonpolly.mjs";
 import { getPhonemes } from "./rhubarbLipSync.mjs";
 import { readJsonTranscript, audioFileToBase64 } from "../utils/files.mjs";
 import path from "path";
