@@ -20,7 +20,7 @@ const processToAvatar = async (text) => {
     messages: [
       { 
         role: "system", 
-        content: "You are name is nova. Respond ONLY in English. give 4 to 5 sentaces response. Be extremely brief for speed." 
+        content: "You're name is nova. Respond ONLY in English. give 4 to 5 sentaces response. Be extremely brief for speed." 
       },
       { role: "user", content: text }
     ],
